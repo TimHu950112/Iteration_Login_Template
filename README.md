@@ -10,8 +10,10 @@
 |Web  Framework|  [![Flask2.0.3](https://img.shields.io/badge/flask-2.03-g.svg)](https://flask.palletsprojects.com/en/3.0.x/) |
 |CSS Framework|  [![Bootstrap5.3.2](https://img.shields.io/badge/bootstrap-5.3.2-yellow.svg)](https://getbootstrap.com/docs/5.3/getting-started/introduction/) |
 - - -
-> ![Login_page](https://i.imgur.com/tsoWWlK.png)
-<center>(Login page)</center>
+>(Login Page Image)
+
+![Login_page](https://i.imgur.com/tsoWWlK.png)
+
 
 ##  Story
 
