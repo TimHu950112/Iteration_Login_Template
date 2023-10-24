@@ -62,7 +62,7 @@ class RegisterResource(Resource):
 
         # 檢查是否有重複的使用者名稱
         if self.users.find_one({'username': username}):
-            return {'message': 'Username already exists'}, 400
+            return {'message': '用戶名稱已經存在'}, 400
 
         # 將密碼進行 bcrypt 雜湊處理
         hashed_password = hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
@@ -71,7 +71,7 @@ class RegisterResource(Resource):
         # 將使用者資料存入 MongoDB
         self.users.insert_one({'username': username, 'password': hashed_password})
 
-        return {'message': 'Registration successful'}, 201
+        return {'message': '註冊成功，請登入'}, 201
 
 
 
