@@ -1,5 +1,16 @@
 
 $(document).ready(function () {
+
+    //用Enter鍵觸發按鈕
+    const input = document.querySelectorAll('input');
+    input.forEach((item) => {
+        item.addEventListener("keyup", (e) => {
+            if (e.key === 'Enter') {
+                document.getElementById('login_button').click();
+            }
+        });
+    });
+
     $("#login_button").click(function (event) {
         event.preventDefault();
         var username = $("#username").val();
